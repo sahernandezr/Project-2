@@ -56,7 +56,7 @@ module.exports = function(app) {
     });
   });
 
-  app.get("/api/products/price", function(req, res) {  // es la unica ruta q falta probar
+  app.get("/api/products/price", function(req, res) {        // es la unica ruta q falta probar
     db.products.findAll({
       where: {
         pages: {

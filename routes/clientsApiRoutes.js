@@ -1,30 +1,50 @@
 var db = require("../models");
 
-module.exports = function(app) {
-  // Get all products
+module.exports = function(app) {     // FALTA PROBAR ESTAS RUTAS EN POSTMAN
+  // Get all clients
   app.get("/api/clients", function(req, res) {   
-    db.Clients.findAll({}).then(function(dbClients) {
+    db.clients.findAll({}).then(function(dbClients) {
       res.json(dbClients);
     });
   });
 
-  // Create a new product
+  app.get("/api/email/:email", function(req, res) {
+    db.clients.findAll({
+      where: {
+        email: req.params.email  
+      }
+    }).then(function(results) {
+      res.json(results);
+    });
+  });
+
+  app.get("/api/telephone/:telephone", function(req, res) {
+    db.clients.findAll({
+      where: {
+        telephone: req.params.telephone  
+      }
+    }).then(function(results) {
+      res.json(results);
+    });
+  });
+
+  // Create a new client
   app.post("/api/clients", function(req, res) {
-    db.Clients.create(req.body).then(function(dbClients) {
+    db.clients.create(req.body).then(function(dbClients) {
       res.json(dbClients);
     });
   });
 
-  // Delete a product by id
+  // Delete a client by id
   app.delete("/api/clients/:id", function(req, res) {
-    db.Clients.destroy({ where: { id: req.params.id } }).then(function(dbClients) {
+    db.clients.destroy({ where: { id: req.params.id } }).then(function(dbClients) {
       res.json(dbClients);
     });
   });
 
-  // Update a product by id
+  // Update a client by id
   app.put("/api/clients", function(req, res) {
-    db.Clients.update(
+    db.clients.update(
       req.body,
       {
         where: {
