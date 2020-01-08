@@ -12,13 +12,38 @@ module.exports = function(app) {
   });
 
   // Load example page and pass in an example by id
+  // app.get("/products/:id", function(req, res) {
+  //   db.products.findOne({ where: { id: req.params.id } }).then(function(dbProducts) {   //Nosotros no creamos la columna Id en la Base de datos
+  //     res.render("products", {
+  //       products: dbProducts
+  //     });
+  //   });
+  // });
+
+  // Load example page and pass in an example by id
   app.get("/products/:id", function(req, res) {
-    db.products.findOne({ where: { id: req.params.id } }).then(function(dbProducts) {   //Nosotros no creamos la columna Id en la Base de datos
-      res.render("products", {
+    db.products
+      .findOne({ where: { id: req.params.id } })
+      .then(function(dbProducts) {
+        //Nosotros no creamos la columna Id en la Base de datos
+        res.render("products", {
+          name: dbProducts.name,
+          product_image: dbProducts.product_image,
+          description: dbProducts.description,
+          discount: dbProducts.discount,
+          price: dbProducts.price
+        });
+      });
+  });
+
+  app.get("/category/:category", function(req, res) {
+    db.products.findAll({ where: { category: req.params.category } }).then(function(dbProducts) {   //Nosotros no creamos la columna Id en la Base de datos
+      res.render("category", {
         products: dbProducts
       });
     });
   });
+
 
 //   // Render 404 page for any unmatched routes
 //   app.get("*", function(req, res) {
