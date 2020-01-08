@@ -1,4 +1,4 @@
-"use strict";
+"use strict";         // Este archivo es asi por default??? siempres será la misma estructura???
 
 var fs = require("fs");
 var path = require("path");

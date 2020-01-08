@@ -1,0 +1,11 @@
+INSERT INTO products (category, name, description, product_image, price, discount, stock) VALUES ("Milk","Almond milk" ,"1 liter in tetrabrick", "https://via.placeholder.com/728x90.png?text=Product+Image", 10 , 0, 100);
+INSERT INTO products (category, name, description, product_image, uprice, discount, stock) VALUES ("Milk","Rice milk","8 oz. in a glass bottle", "https://via.placeholder.com/728x90.png?text=Product+Image",2.50, 0.10, 75);
+INSERT INTO products (category, name, description, product_image, price, discount, stock) VALUES ("Eggs","Free range chicken eggs", "18 eggs in a recycled carton box", "https://via.placeholder.com/728x90.png?text=Product+Image", 5, 0.05, 28);
+INSERT INTO products (category, name, description, product_image, price, discount, stock) VALUES ("Eggs","French duck eggs","Package of six units", "https://via.placeholder.com/728x90.png?text=Product+Image", 12, 0, 12);
+INSERT INTO products (category, name, description, product_image, price, discount, stock) VALUES ("Meat substitutes", "Tofurkey","3 pounds of soy meat substitute", "https://via.placeholder.com/728x90.png?text=Product+Image", 45.50, 0.12, 150);
+INSERT INTO products (category, name, description, product_image, price, discount, stock) VALUES ("Meat substitute","Beef breakfast sausages", "8 sausages made of grass feed beef from Japan","https://via.placeholder.com/728x90.png?text=Product+Image", 38.75, 0.30,3);
+
+INSERT INTO clients (name, email, password, address, telephone, creditcard) VALUES ("Froy","froy@gmail.com", "1234", "Calle 3 #23", "53259000", "5555555555555555");
+INSERT INTO clients (name, email, password, address, telephone, creditcard) VALUES ("Daphne","daphne@gmail.com" ,"5678" ,"Av. 17 #21" ,"52147895" ,"2222222222222222");
+INSERT INTO clients (name, email, password, address, telephone, creditcard) VALUES ("Humberto", "humberto@gmail.com", "6789", "Blvd. 17 #4", "78951230" , "8888888888888888");
+INSERT INTO clients (name, email, password, address, telephone, creditcard) VALUES ("Sandra","sandra@gmail.com" ,"9321" ,"Av. 98 #45","55321659" ,"1111111111111111");
