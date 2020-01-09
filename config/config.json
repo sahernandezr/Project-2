@@ -1,8 +1,8 @@
 {
   "development": {
     "username": "root",
-    "password": null,
-    "database": "exampledb",
+    "password": "LeicaMySQL911*",
+    "database": "store",
     "host": "localhost",
     "dialect": "mysql"
   },

@@ -6,38 +6,141 @@
   {{!-- <link rel="stylesheet" href="../../public/styles/reset.css"> --}}
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://bootswatch.com/4/minty/bootstrap.css">
-  <link rel="shortcut icon" href="https://github.com/sahernandezr/Project-2/blob/sandra/public/images/favicon.png?raw=true"/>
+  <link rel="shortcut icon"
+    href="https://github.com/sahernandezr/Project-2/blob/sandra/public/images/favicon.png?raw=true" />
   {{!-- <link rel="stylesheet" href="/styles/styles.css" media="screen" title="no title" charset="utf-8"> --}}
   <title>Organic Store</title>
 </head>
 
 <body>
-<nav class="navbar navbar-light bg-light">
-  <a class="navbar-brand" href="/">
-    Organic Store
-  </a>
-</nav>
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-primary ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="/">Organic Eco Store</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+        aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <div id="loginbutton">
+            <li class="dropdown">
+              <button type="button" id="dropdownMenu1 myDIV2" data-toggle="dropdown"
+                class="btn btn-danger btn-lg add-to-cart dropdown-toggle">Login <span class="caret"></span></button>
+              <ul class="dropdown-menu dropdown-menu-right mt-2">
+                <li class="px-3 py-2">
+                  <form class="form" role="form">
+                    <div class="form-group">
+                      <input id="emailInput" placeholder="Name" class="form-control form-control-sm" type="text"
+                        required="">
+                    </div>
+                    <div class="form-group">
+                      <input id="passwordInput" placeholder="Password" class="form-control form-control-sm" type="text"
+                        required="">
+                    </div>
+                    <div class="form-group">
+                      <button type="submit" class="btn btn-primary btn-block" id="myDIV3"
+                        onclick="myFunction()">Login</button>
+                    </div>
+                    <div class="form-group text-center">
+                      <small><a href="#" data-toggle="modal" data-target="#modalPassword">Forgot password?</a></small>
+                    </div>
+                  </form>
+                </li>
+              </ul>
+            </li>
+          </div>
+
+          <li class="nav-item active"><a href="" class="nav-link" id="myDIV">Sign Up</a></li>
+
+          <li class="nav-item cta cta-colored active"><a href="" class="nav-link"><span
+                class="icon-shopping_cart"></span>[Cart]</a></li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
 
 
   {{{body}}}
 
 
-<footer class="text-muted">
-  <div class="container">
-    <p class="float-right">
-      <a href="#">Back to top</a>
-    </p>
-    <p>Footer goes here</p>
-   </div>
-</footer>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  <footer class="ftco-footer ftco-section bg-primary">
+      <div class="container">
+      	
+        <div class="row">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Organic Eco Store</h2>
+              <p>All the products you love in the same place and at a lower price!</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Help</h2>
+              <div class="d-flex">
+	              <ul class="list-unstyled mr-l-5 pr-l-3 mr-4">
+	                <li><a href="#" class="py-2 d-block">Shipping Information</a></li>
+	                <li><a href="#" class="py-2 d-block">Returns &amp; Exchange</a></li>
+	                <li><a href="#" class="py-2 d-block">Terms &amp; Conditions</a></li>
+	                <li><a href="#" class="py-2 d-block">Privacy Policy</a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Contact Us</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li>Daphne Jiménez</li>
+                  <li>Froylán Pérez</li>
+                  <li>Humberto Gómez</li>
+                  <li>Sandra Hernández</li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            Copyright 2020
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
-  <script src="/docs/4.4/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm"
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
     crossorigin="anonymous"></script>
-<script src="/public/js/index.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="/public/js/index.js"></script>
+  <script>
+
+
+    function myFunction() {
+      var x = document.getElementById("loginbutton");
+      x.innerHTML = "Hello, Froy!";
+
+      var y = document.getElementById("myDIV");
+      if (y.style.display === "none") {
+        y.style.display = "block";
+      } else {
+        y.style.display = "none";
+      }
+    }
+
+
+  </script>
 </body>
 
 </html>
