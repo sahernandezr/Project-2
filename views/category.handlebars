@@ -1,0 +1,33 @@
+<div id="category">
+
+
+
+    {{!-- <section class="jumbotron text-center">
+        <div class="container">
+    
+        </div>
+    </section> --}}
+
+    <div class="album py-5 bg-light">
+        <div class="container">
+
+            <div class="row">
+                {{#each products}}
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <a href="products/{{id}}"><img src={{product_image}} class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">{{name}}</h5>
+                            <span class="badge badge-danger" id="discount">{{discount}}% OFF!</span>
+                            <p class="card-text" id="price">${{price}}</p></a>
+                            <a href="products/{{id}}" class="btn btn-success" id="{{id}}">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+
+
+</div>
