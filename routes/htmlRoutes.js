@@ -3,10 +3,15 @@ var db = require("../models");
 module.exports = function(app) {
   // Load index page
   app.get("/", function(req, res) {
+<<<<<<< HEAD
     db.products.findAll({}).then(function(dbProducts) {
       // Que diferencia hay con res.sendFile
       res.render("index", {
         // ES SI USAMOS HANDLEBARS
+=======
+    db.products.findAll({}).then(function(dbProducts) {   // Que diferencia hay con res.sendFile
+      res.render("index", {    // ES SI USAMOS HANDLEBARS
+>>>>>>> cdf3fd8c54c769a15219e102051ab1c4a302d69a
         msg: "Welcome!",
         products: dbProducts
       });

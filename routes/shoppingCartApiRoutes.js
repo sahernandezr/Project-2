@@ -2,8 +2,7 @@ var db = require("../models");
 
 module.exports = function(app) {
   // Get all shoppingcarts
-  app.get("/api/shoppingcart", function(req, res) {
-    //no se si vale la penar tener esta ruta, ¿vamos a almacenar todos los shopping carts q se vayan generando?
+  app.get("/api/shoppingcart", function(req, res) {   //no se si vale la penar tener esta ruta, ¿vamos a almacenar todos los shopping carts q se vayan generando?
     db.shoppingcart.findAll({}).then(function(dbShoppingcart) {
       res.json(dbShoppingcart);
     });
