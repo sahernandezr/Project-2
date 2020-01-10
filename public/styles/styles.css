@@ -1,3 +1,35 @@
 .list-group-item {
   line-height: 2.5;
 }
+
+.titles {
+  margin: 20px 0px 20px 0px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.title {
+  margin: 10px 0px 0px 0px;
+}
+
+.prices {
+  margin: 20px 0px 20px 0px;
+  font-weight: 500;
+  height: 50px;
+}
+
+.price {
+  margin: 0px 0px 0px 0px;
+}
+
+.pricetwo {
+  margin: 0px 0px 0px 140px;
+}
+
+.priceText{
+  margin: 10px 0px 0px 0px;
+}
+
+.img{
+  height: 100px;
+}
