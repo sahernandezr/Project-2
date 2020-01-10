@@ -29,7 +29,6 @@ module.exports = function(app) {
       .then(function(dbProducts) {
         //Nosotros no creamos la columna Id en la Base de datos
         res.render("products", {
-          id: dbProducts.id,
           name: dbProducts.name,
           product_image: dbProducts.product_image,
           description: dbProducts.description,
@@ -43,8 +42,10 @@ module.exports = function(app) {
     db.products
       .findAll({ where: { category: req.params.category } })
       .then(function(dbProducts) {
+        console.log(dbProducts);
         res.render("category", {
-          products: dbProducts
+          products: dbProducts,
+          category: req.params.category
         });
       });
   });
