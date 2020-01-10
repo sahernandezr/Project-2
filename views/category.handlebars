@@ -1,0 +1,37 @@
+<div id="category">
+
+    <div id="categoryAd" class="col-10">
+        <img
+            src="https://github.com/sahernandezr/Project-2/blob/sandra/public/images/banner_horizontal.png?raw=true">
+    </div>
+
+    <section class="jumbotron text-center">
+        <div class="container">
+            <h1>{{category}}</h1>
+        </div>
+    </section>
+
+    <div class="album py-5 bg-light">
+        <div class="container">
+
+            <div class="row">
+                {{#each products}}
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <a href="products/{{id}}"><img src={{product_image}} class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">{{name}}</h5>
+                                <span class="badge badge-danger" id="discount">{{discount}}% OFF!</span>
+                                <p class="card-text" id="price">${{price}}</p>
+                        </a>
+                        <a href="products/{{id}}" class="btn btn-success" id="{{id}}">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>
+
+
+</div>

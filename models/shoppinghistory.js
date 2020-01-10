@@ -6,8 +6,8 @@ module.exports = function(sequelize, DataTypes) {
     category: DataTypes.STRING,
     productname: DataTypes.STRING,
     description: DataTypes.TEXT,
-    price: DataTypes.DECIMAL(10,2),  //cambiar a q acepte fracciones
-    discount: DataTypes.INTEGER,
+    price: DataTypes.DECIMAL(10, 2), //cambiar a q acepte fracciones
+    discount: DataTypes.INTEGER
   });
   return ShoppingHistory;
 };

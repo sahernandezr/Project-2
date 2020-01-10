@@ -15,12 +15,12 @@ module.exports = function(app) {
     });
   });
 
- // Delete a product in the shopping cart
+  // Delete a product in the shopping cart
   app.delete("/api/shoppingcart/", function(req, res) {
-    db.shoppingcart.destroy({ where: { id: req.params.id } }).then(function(dbShoppingcart) {
-      res.json(dbShoppingcart);
-    });
+    db.shoppingcart
+      .destroy({ where: { id: req.params.id } })
+      .then(function(dbShoppingcart) {
+        res.json(dbShoppingcart);
+      });
   });
-  
-
 };
