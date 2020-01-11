@@ -1,0 +1,57 @@
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-primary ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="/">Organic Eco Store</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+        aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <div id="loginbutton">
+          <li class="nav-item cta cta-colored active"><a href="/buy/cart" class="nav-link"><span
+                class="icon-shopping_cart"><i class="fas fa-shopping-cart"></i></a></li></span>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+<div class="container table-one">
+
+        <div class="row titles table-active">
+            <div class="col-2 title"></div>
+            <div class="col-2 title"><p>Item category:</p></div>
+            <div class="col-2 title"><p>Item name:</p></div>
+            <div class="col-2 title"><p>Item description:</p></div>
+            <div class="col-2 title"><p>Item price:</p></div>
+            <div class="col-2 title"></div>
+        </div>
+
+        {{#each products}}
+        <div class="row">
+            <div class="col-2"><img class="img" src="{{product_image}}"></div>
+            <div class="col-2"><p>{{category}}</p></div>
+            <div class="col-2"><p>{{name}}</p></div>
+            <div class="col-2"><p>{{description}}</p></div>
+            <div class="col-2"><p>{{price}}</p></div>
+            <div class="col-2"><button class="btn btn-secondary" id="{{id}}">Remove item</button></div>
+        </div>
+        {{/each}}
+
+    </div>
+
+    <div class="container table-two">
+
+        <div class="row prices">
+            <div class="col-2"></div>
+            <div class="col-2"></div>
+            <div class="col-2"></div>
+            <div class="col-4 alert alert-dismissible alert-info price">
+                <span class="price">Total:</span>
+                <span class="pricetwo" id="totalPrice">$ 0.00</span>
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </div>

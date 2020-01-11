@@ -13,6 +13,16 @@ module.exports = function(app) {
     });
   });
 
+  // Load shopping cart
+  app.get("/buy/cart", function(req, res) {
+    db.products.findAll({}).then(function(dbProducts) {
+      console.log(dbProducts);
+      res.render("cart", {
+        products: dbProducts
+      });
+    });
+  });
+
   // Load example page and pass in an example by id
   // app.get("/products/:id", function(req, res) {
   //   db.products.findOne({ where: { id: req.params.id } }).then(function(dbProducts) {   //Nosotros no creamos la columna Id en la Base de datos
