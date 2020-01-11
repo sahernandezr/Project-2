@@ -1,12 +1,56 @@
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-primary ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+        <a class="navbar-brand" href="/">Organic Eco Store</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+            aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="oi oi-menu"></span> Menu
+        </button>
+
+        <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav ml-auto">
+                <div id="loginbutton">
+
+
+                    <li class="nav-item cta cta-colored active"><a href="/buy/cart" class="nav-link"><span
+                                class="icon-shopping_cart"><i class="fas fa-shopping-cart"></i></a></li></span>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="categoryListNames">
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link active" href="/dairy">Dairy</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="/protein">Protein</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="/produce">Produce</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="/hemp">Hemp</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="/beauty">Beauty</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="/cleaning">Cleaning</a>
+        </li>
+    </ul>
+</div>
+
 <div id="category">
 
-    <div id="categoryAd" class="col-10">
-        <img
+    <div id="categoryAd">
+        <img class="categoryAdHemp"
             src="https://github.com/sahernandezr/Project-2/blob/sandra/public/images/banner_horizontal.png?raw=true">
     </div>
 
     <section class="jumbotron text-center">
-        <div class="container">
+        <div class="container" class="categoryName text-dark">
             <h1>{{category}}</h1>
         </div>
     </section>
@@ -17,7 +61,7 @@
             <div class="row">
                 {{#each products}}
                 <div class="col-md-4">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card productCard" style="width: 18rem;">
                         <a href="products/{{id}}"><img src={{product_image}} class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">{{name}}</h5>
@@ -31,7 +75,4 @@
             {{/each}}
         </div>
     </div>
-</div>
-
-
 </div>

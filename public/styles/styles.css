@@ -33,3 +33,72 @@
 .img{
   height: 100px;
 }
+
+footer {
+  margin: 20px 0px 0px 0px;
+  padding: 20px 20px;
+
+}
+
+.home {
+  max-width: 90%;
+  margin: auto auto;
+
+}
+
+#category {
+  max-width: 90%;
+  margin: auto auto;
+
+}
+
+#productspage {
+  width: 90%;
+  margin: auto auto;
+}
+
+.progress {
+  margin: 20px 20px;
+}
+
+.categories {
+  max-width: 80%;
+  margin: auto auto;
+}
+
+#homeSubtitle {
+  text-align: center;
+}
+
+#carouselExampleControls {
+  margin: auto auto;
+  padding: 20px 20px;
+}
+
+#categoryAd, #categoryAdHemp {
+  width: 90%;
+  margin: auto auto;
+  padding: 20px 20px;
+  text-align: center;
+}
+
+.jumbotron {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 20px;
+  text-align: center;
+  background: #FF7851 !important;
+}
+
+.productCard {
+  margin: 10px;
+  padding: 20px 20px;
+  text-align: center;
+}
+
+
+#categoryListNames {
+  margin: auto auto;
+  padding: 20px 20px;
+  text-align: center;
+}

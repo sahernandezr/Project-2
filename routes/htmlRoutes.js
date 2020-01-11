@@ -13,7 +13,7 @@ module.exports = function(app) {
     });
   });
 
-// Load shopping cart
+  // Load shopping cart
   app.get("/buy/cart", function(req, res) {
     db.products.findAll({}).then(function(dbProducts) {
       console.log(dbProducts);
@@ -22,7 +22,6 @@ module.exports = function(app) {
       });
     });
   });
-
 
   // Load example page and pass in an example by id
   // app.get("/products/:id", function(req, res) {
